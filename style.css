@@ -13,3 +13,18 @@
 #timer-status{font-size:13px;white-space:nowrap;color:#e9f2f9}
 #timer-status strong{display:block;color:white;font-size:15px;line-height:1.2}
 @media(max-width:650px){header{align-items:flex-start}header>div{gap:8px;flex-wrap:wrap;justify-content:flex-end}#timer-status{order:0;text-align:right;font-size:11px}#timer-status strong{font-size:13px}#save-status{order:2}#guide-open{order:1;padding:8px 10px}}
+.prior-label{font-size:17px;font-weight:750;line-height:1.35;margin:8px 0}
+.review-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}
+.review-action{background:#fff;color:var(--ink);border-color:#aab9c5;text-align:left;min-height:52px}
+.review-action[aria-pressed=true]{background:#eaf6f2;border:2px solid var(--teal);padding:11px 16px}
+.response-summary{color:var(--teal);font-weight:650;margin:6px 0}
+.response-prompt{font-weight:700;margin:18px 0 8px}
+.required{font-size:12px;color:var(--red);margin-left:5px}
+.disagreement-reason{max-width:100%}
+.worked-examples{border-top:1px solid var(--line);padding-top:14px;margin-top:22px}
+.worked-examples summary{font-size:16px}
+.guide-option{padding:9px 12px;margin:7px 0}
+.guide-option strong{font-size:14px}
+.guide-option p{margin:3px 0;font-size:13px}
+.guide-list li{margin:7px 0}
+@media(max-width:650px){.review-actions{grid-template-columns:1fr}.review-action{min-height:48px}}
