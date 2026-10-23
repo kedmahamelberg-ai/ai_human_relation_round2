@@ -12,6 +12,9 @@
 @media(max-width:650px){.example-table,.example-table tbody,.example-table tr,.example-table th,.example-table td,.example-table tbody th{display:block;width:100%}.example-table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}.example-table tbody tr{border-bottom:5px solid #e9eef2}.example-table tbody tr:last-child{border-bottom:0}.example-table th,.example-table td{border-bottom:0;padding:11px 14px}.example-table td:before{content:attr(data-label);display:block;text-transform:uppercase;letter-spacing:.08em;font-size:11px;font-weight:800;color:var(--teal);margin-bottom:4px}}
 #timer-status{font-size:13px;white-space:nowrap;color:#e9f2f9}
 #timer-status strong{display:block;color:white;font-size:15px;line-height:1.2}
+.start-task{background:#c92f38;border-color:#9b2028;margin:14px 0 0 12px;font-weight:800}
+.start-task:hover{background:#af2730}
+.copy-reason{font-size:12px;padding:7px 10px;margin-top:8px}
 @media(max-width:650px){header{align-items:flex-start}header>div{gap:8px;flex-wrap:wrap;justify-content:flex-end}#timer-status{order:0;text-align:right;font-size:11px}#timer-status strong{font-size:13px}#save-status{order:2}#guide-open{order:1;padding:8px 10px}}
 .prior-label{font-size:17px;font-weight:750;line-height:1.35;margin:8px 0}
 .review-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}
