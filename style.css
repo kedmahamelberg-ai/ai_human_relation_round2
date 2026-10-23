@@ -9,6 +9,7 @@
 .example-table td strong{display:block;color:#183044}
 .example-table td p{margin:6px 0 0;color:var(--muted)}
 .example-number{display:inline-block;margin-right:6px;font-weight:800;color:var(--teal)}
+[hidden]{display:none!important}
 @media(max-width:650px){.example-table,.example-table tbody,.example-table tr,.example-table th,.example-table td,.example-table tbody th{display:block;width:100%}.example-table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}.example-table tbody tr{border-bottom:5px solid #e9eef2}.example-table tbody tr:last-child{border-bottom:0}.example-table th,.example-table td{border-bottom:0;padding:11px 14px}.example-table td:before{content:attr(data-label);display:block;text-transform:uppercase;letter-spacing:.08em;font-size:11px;font-weight:800;color:var(--teal);margin-bottom:4px}}
 #timer-status{font-size:13px;white-space:nowrap;color:#e9f2f9}
 #timer-status strong{display:block;color:white;font-size:15px;line-height:1.2}
