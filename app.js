@@ -35,7 +35,7 @@ function openingProgress(){return Object.values(S.records).filter(r=>r.record_ty
 function completeItem(item){const r=S.records[itemKey(item)];if(!r||!r.completed_at)return false;if(item.record_type==='attention_check')return !!r.attention_choice;return FIELDS.every(f=>options(f).some(o=>o.value===r[f])&&['agree','disagree'].includes(r[f+'_stance'])&&(r[f+'_stance']!=='disagree'||String(r[f+'_reason']||'').trim().length>=8));}
 function completeSession(n){return S.sessions[n].items.every(completeItem);}
 function allDone(){return S.sessions.every((s,n)=>completeSession(n));}
-function clockText(){if(!S?.study_deadline_at)return 'Starts after practice';const seconds=Math.max(0,Math.ceil((Date.parse(S.study_deadline_at)-Date.now())/1000));return seconds?Math.floor(seconds/3600)+':'+String(Math.floor(seconds%3600/60)).padStart(2,'0')+':'+String(seconds%60).padStart(2,'0'):'Window ended — still save and submit';}
+function clockText(){if(!S?.study_deadline_at)return '4:00:00 (not started)';const seconds=Math.max(0,Math.ceil((Date.parse(S.study_deadline_at)-Date.now())/1000));return seconds?Math.floor(seconds/3600)+':'+String(Math.floor(seconds%3600/60)).padStart(2,'0')+':'+String(seconds%60).padStart(2,'0'):'Window ended — still save and submit';}
 function updateClock(){document.querySelectorAll('.clock').forEach(el=>el.textContent=clockText());}
 function guide(){
   const rules=Object.values(DATA.short_rules).map(x=>'<li>'+esc(x)+'</li>').join('');
